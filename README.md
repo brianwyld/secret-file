@@ -20,3 +20,10 @@ Future versions may provide for storage on
 As only the encrypted data is ever stored, no security implcations are expected from the storage mechanism.
 
 The non-encrypted data only ever exists in the JS/DOM of the web page.
+
+ Acknowledgements (full attributtion notices in the html file)
+ - AES implementation from the SlowAES project : http://code.google.com/p/slowaes/
+ - PBKDF2 implementation from http://anandam.com/pbkdf2 (modified to be syncrhonous api call)
+ - SHA1 implementation frm http://pajhome.org.uk/crypt/md5/sha1.html
+ 
+Thsnks guys!
