@@ -29,8 +29,13 @@ Future versions may provide for storage on
  - bluetooth file share device (maybe...)
  - ftp server
  
+ #Security issues
+  - as talked about elsewhere, doing encryption in JS in the browser can be compromised if your browsr session is compromised already by another bad actor, as they could access the plaintext in the html, or even pervert the JS to introduce weaknesses in the encryption process. This is however no different from having malware on your machine in any form....
+  - if your passphrase is short, then the generated AES key may be weak. Use a full sentance of at least 32 chars if you suspect bad people care enough about your secrets.
+  - code backdoors : the really paranoid will check the JS in the html actually does what I said, and doesn't (for example) just store your text as base64... or send it to my secret backend control server... or whatever. Same for the encryptiona nd key derivation code, which I used from other projects - I read thru it and it looked ok to me, but thats not a guarantee.... (but if you care that much maybe another hardware based solotion might be more your speed? - eg https://www.crowdsupply.com/sutajio-kosagi/precursor) 
 
- Acknowledgements (full attributtion notices in the html file)
+ # Acknowledgements
+ Note full attributtion notices in the html file!
  - AES implementation from the SlowAES project : http://code.google.com/p/slowaes/
  - PBKDF2 implementation from http://anandam.com/pbkdf2 (modified to be syncrhonous api call)
  - SHA1 implementation frm http://pajhome.org.uk/crypt/md5/sha1.html
