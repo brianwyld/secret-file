@@ -1,0 +1,11 @@
+{
+"add": [
+  { "src":"toto.json", "dst":"/flash/test/toto.json" },
+  { "src":"https://releases.infrafon.cloud/manifest.json", "dst":"/flash/test/tata.json" },
+  { "src":"titi.mpy", "dst":"/flash/test/tit.mpy" },
+  { "src":"https://www.codico.com/static/version1689051965/frontend/codico/theme/en_US/images/logo.png", "dst":"/flash/test/logo.png" }
+],
+"del":[
+  "/flash/test/hoho.json"
+]
+}
